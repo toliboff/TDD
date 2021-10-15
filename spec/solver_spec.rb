@@ -25,4 +25,18 @@ describe Solver do
     end
   end
 
+  describe '#reverse' do
+    it 'takes string parameter and returns reversed' do
+      expect(@solver.reverse 'Hello').to eql 'olleH'
+    end
+
+    it 'takes string parameter and returns reversed' do
+      expect(@solver.reverse 'reverse').to eql 'esrever'
+    end
+
+    it 'takes string parameter and returns reversed' do
+      expect(@solver.reverse '12345').to eql '54321'
+    end
+  end
+
 end
