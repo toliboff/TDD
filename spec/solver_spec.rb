@@ -39,4 +39,22 @@ describe Solver do
     end
   end
 
+  describe '#fizzbuzz' do
+    it 'takes a integer parameter and returns string following given rules' do
+      expect(@solver.fizzbuzz 6).to eql 'fizz'
+    end
+
+    it 'takes a integer parameter and returns string following given rules' do
+      expect(@solver.fizzbuzz 10).to eql 'buzz'
+    end
+
+    it 'takes a integer parameter and returns string following given rules' do
+      expect(@solver.fizzbuzz 15).to eql 'fizzbuzz'
+    end
+
+    it 'takes a integer parameter and returns string following given rules' do
+      expect(@solver.fizzbuzz 7).to eql '7'
+    end
+  end
+
 end
